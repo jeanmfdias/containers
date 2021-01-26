@@ -1,18 +1,18 @@
 version: '3'
 
 services:
-    db57:
-        container_name: mysql57-containers
-        image: mysql57-containers
-        build:
-            context: .
-            dockerfile: ./Dockerfile
-        ports:
-            - 3306:3306
-        volumes:
-            - ./data:/var/lib/mysql/
-        environment:
-           - MYSQL_ROOT_PASSWORD=root
-           - MYSQL_USER=projects
-           - MYSQL_PASSWORD=secret
-        working_dir: /var/lib/mysql
+  db57:
+    container_name: mysql57-containers
+    image: mysql57-containers
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 3306:3306
+    volumes:
+      - ./data57:/var/lib/mysql/
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=secret
+    working_dir: /var/lib/mysql
