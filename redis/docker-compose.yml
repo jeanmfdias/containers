@@ -4,7 +4,7 @@ services:
   redis:
     container_name: redis-containers
     image: redis:latest
-    command: redis-server --requirepass Redis2021
+    command: redis-server --requirepass Redis2022
     ports:
       - 6379:6379
     volumes:
