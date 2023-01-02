@@ -1,4 +1,5 @@
 *.log
 /mysql/data57
+/mysql8/data
 /jenkins/jenkins_home
 /postgresql/data
