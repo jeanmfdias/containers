@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  db57:
+    container_name: mysql8-containers
+    image: mysql8-containers
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 3380:3306
+    volumes:
+      - ./data:/var/lib/mysql
+      - ./configs/db8.cnf:/etc/mysql/conf.d/db8.cnf
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=secret
+    working_dir: /var/lib/mysql
