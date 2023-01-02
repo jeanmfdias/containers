@@ -8,7 +8,7 @@ services:
       context: .
       dockerfile: ./Dockerfile
     ports:
-      - 3306:3306
+      - 3357:3306
     volumes:
       - ./data57:/var/lib/mysql
       - ./configs/db57.cnf:/etc/mysql/conf.d/db57.cnf
