@@ -8,3 +8,9 @@ Projeto para base de containers Docker, para agilizar um ambiente de desenvolvim
 - NodeJS
 - PostgreSQL
 - Redis
+
+# Para executar
+
+```sh startup.sh --mysql 57```
+
+Sobe o container do MySQL 5.7
