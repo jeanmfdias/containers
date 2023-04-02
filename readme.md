@@ -6,6 +6,7 @@ Projeto para base de containers Docker, para agilizar um ambiente de desenvolvim
 - MySQL 5.7
 - MySQL 8.0
 - NodeJS
+- PHP 8.2
 - PostgreSQL
 - Redis
 
